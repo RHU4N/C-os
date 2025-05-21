@@ -2,6 +2,16 @@ import React from "react";
 
 const FAQ = () => {
   return (
+    <>
+    <nav aria-label="breadcrumb" className='nav justify-content-center'>
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item">
+            <a href="/">Home</a>
+          </li>
+          <li class="breadcrumb-item active" aria-current="page">FAQ
+          </li>
+        </ol>
+      </nav>
     <div className="container mt-5 row">
     <h1 className="mb-4 text-center display-5">FAQ</h1>
       <div className="accordion" id="accordionExample">
@@ -122,6 +132,7 @@ const FAQ = () => {
         </div>
       </div>
     </div>
+    </>
   );
 };
 

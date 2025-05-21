@@ -3,6 +3,16 @@ import { Link } from 'react-router-dom';
 
 function Matematica() {
   return (
+    <>
+    <nav aria-label="breadcrumb" className='nav justify-content-center'>
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item">
+            <a href="/">Home</a>
+          </li>
+          <li class="breadcrumb-item active" aria-current="page">Matemática
+          </li>
+        </ol>
+      </nav>
     <div className="container mt-5 row aling-items-center justify-content-center">
       <h2 className="mb-4 text-center">Matemática</h2>
       <p className="text-muted mb-4 text-center">Escolha uma das áreas para acessar as fórmulas e ferramentas:</p>
@@ -39,6 +49,7 @@ function Matematica() {
         </div>
       </div>
     </div>
+    </>
   );
 }
 

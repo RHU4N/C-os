@@ -28,6 +28,20 @@ function AnaliseComb() {
   };
 
   return (
+    <>
+    <nav aria-label="breadcrumb" className='nav justify-content-center'>
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item">
+            <a href="/">Home</a>
+          </li>
+          <li class="breadcrumb-item">
+            <a href="/matematica">Matematica</a>
+          </li>
+          <li class="breadcrumb-item active" aria-current="page">
+            Análise Combinatória
+          </li>
+        </ol>
+      </nav>
     <div className="container mt-5 row">
       <h2 className="mb-4 text-center">Análise Combinatória</h2>
       <form className="card p-4 shadow-sm" onSubmit={handleSubmit} aria-label="Formulário de análise combinatória">
@@ -58,6 +72,7 @@ function AnaliseComb() {
       </form>
       <div className="mt-3 text-muted small">Preencha os campos e clique em Calcular para ver o resultado.</div>
     </div>
+    </>
   );
 }
 

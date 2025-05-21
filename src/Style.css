@@ -284,11 +284,15 @@ li {
     transition: background 0.3s;
 }
 
-li.active:hover {
+li:hover {
     background: #e9e9e9;
 }
 
-li.active a {
+.dropdown li.active:hover {
+    background: #e9e9e9;
+}
+
+.dropdown li.active a {
     color: #007BFF;
     text-decoration: none;
     cursor: pointer;
@@ -297,10 +301,11 @@ li.active a {
 
 li.active a:hover {
     color: #0056b3;
+    cursor: pointer;
     
 }
 
-.dropdown li  a {
+.dropdown li a {
     text-decoration: none;
     cursor: not-allowed;
 }
@@ -368,3 +373,10 @@ form input:focus {
   border: 2px solid #1e88e5;
   box-shadow: 0 0 0 0.2rem #007bff33;
 }
+
+
+
+
+
+
+
