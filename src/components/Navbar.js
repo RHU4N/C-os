@@ -7,20 +7,20 @@ function Navbar() {
     <header className="navbar">
       <div className="logo" style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
         <img src="/logo.png" alt="Logo Céos" style={{ height: '48px', width: '48px' }} />
-        <Link to="/" style={{ color: 'inherit', textDecoration: 'none' }}>Céos</Link>
+        <Link to="/" style={{ color: 'inherit', textDecoration: 'none' }} className='display-3'>Céos</Link>
       </div>
       <nav>
         <ul className="menu">
           <li className="dropdown">
             <span>Ambiente de Estudo ▼</span>
             <ul className="submenu">
-              <li><Link to="#">Química</Link></li>
-              <li><Link to="#">Física</Link></li>
-              <li><Link to="#">Matemática</Link></li>
+              <li className='active'><Link to="/matematica">Matemática</Link></li>
+              <li><Link to="#" disabled>Química</Link></li>
+              <li><Link to="#" disabled>Física</Link></li>
+              
             </ul>
           </li>
-          <li><Link to="/sobre" id="btn-sobre">Sobre</Link></li>
-          <li><Link to="#">Central de Ajuda</Link></li>
+          <li><Link to="/faq">Central de Ajuda</Link></li>
           <li><Link to="#">Planos</Link></li>
         </ul>
       </nav>

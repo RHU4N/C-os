@@ -2,10 +2,10 @@ import React from 'react';
 import '../Style.css';
 
 const Footer = () => (
-  <footer className="footer">
+  <footer className="footer fixed-bottom">
     <hr />
-    <div>Agradecemos pela escolha</div>
-    <div>©2023 Copyright: Céos</div>
+    <div>Email de contato: ceoscalculadora.suporte@gmail.com | © Todos os direitos reservados 2025 </div>
+    
   </footer>
 );
 

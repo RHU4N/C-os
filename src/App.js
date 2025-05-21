@@ -8,6 +8,9 @@ import Matematica from './pages/Matematica';
 import Funcao from './pages/Funcao';
 import AnaliseComb from './pages/AnaliseComb';
 import Estatistica from './pages/Estatistica';
+import Footer from './components/Footer';
+import FAQ from './pages/FAQ';
+import Sobre from './components/Sobre';
 
 function App() {
   return (
@@ -20,8 +23,10 @@ function App() {
           <Route path="/matematica/funcao" element={<Funcao />} />
           <Route path="/matematica/analise-combinatoria" element={<AnaliseComb />} />
           <Route path="/matematica/estatistica" element={<Estatistica />} />
+          <Route path="/faq" element={<FAQ />} />
         </Routes>
       </main>
+      <Footer />
     </Router>
   );
 }

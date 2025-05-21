@@ -3,9 +3,9 @@ import { Link } from 'react-router-dom';
 
 function Matematica() {
   return (
-    <div className="container mt-5">
-      <h2 className="mb-4">Matemática</h2>
-      <p className="text-muted mb-4">Escolha uma das áreas para acessar as fórmulas e ferramentas:</p>
+    <div className="container mt-5 row aling-items-center justify-content-center">
+      <h2 className="mb-4 text-center">Matemática</h2>
+      <p className="text-muted mb-4 text-center">Escolha uma das áreas para acessar as fórmulas e ferramentas:</p>
       <div className="row g-4">
         <div className="col-md-4">
           <Link to="/matematica/funcao" className="text-decoration-none">

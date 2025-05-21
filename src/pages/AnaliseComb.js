@@ -28,8 +28,8 @@ function AnaliseComb() {
   };
 
   return (
-    <div className="container mt-5">
-      <h2 className="mb-4">Análise Combinatória</h2>
+    <div className="container mt-5 row">
+      <h2 className="mb-4 text-center">Análise Combinatória</h2>
       <form className="card p-4 shadow-sm" onSubmit={handleSubmit} aria-label="Formulário de análise combinatória">
         <div className="mb-3">
           <label className="form-label">Tipo</label>

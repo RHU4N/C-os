@@ -33,8 +33,16 @@ function Funcao() {
   };
 
   return (
-    <div className="container mt-5">
-      <h2 className="mb-4">Função</h2>
+    <>
+    <nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="/">Home</a></li>
+    <li class="breadcrumb-item"><a href="/matematica">Matematica</a></li>
+    <li class="breadcrumb-item active" aria-current="page">Data</li>
+  </ol>
+</nav>
+    <div className="container mt-5 row aling-items-center justify-content-center">
+      <h2 className="mb-4 text-center">Função</h2>
       <form className="card p-4 shadow-sm" onSubmit={handleSubmit} aria-label="Formulário de função">
         <div className="mb-3">
           <label className="form-label">Tipo de Função</label>
@@ -69,6 +77,7 @@ function Funcao() {
       </form>
       <div className="mt-3 text-muted small">Preencha os campos e clique em Calcular para ver o resultado.</div>
     </div>
+    </>
   );
 }
 
